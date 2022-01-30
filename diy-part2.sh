@@ -50,3 +50,6 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 拉取ipsec-vpnd LuCI
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
+
+# 拉取cpufreq LuCI
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
