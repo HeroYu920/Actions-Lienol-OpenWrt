@@ -49,7 +49,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 #rm -rf package/passwall/xray-core
 
 # 拉取ipsec-vpnd LuCI
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
+svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
 
 # 拉取cpufreq LuCI
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-cpufreq package/lean/luci-app-cpufreq
