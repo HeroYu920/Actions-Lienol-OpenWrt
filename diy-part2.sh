@@ -14,6 +14,19 @@
 sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 #sed -i 's/192.168.1.1/192.168.6.5/g' package/base-files/files/bin/config_generate
 
+# 删除自带xray-core核心
+rm -rf package/feeds/packages/xray-core
+
+# 拉取passwall源码
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+#git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
+
+# 删除passwall中xray-core核心
+#rm -rf package/passwall/xray-core
+
+# 拉取ipsec-vpnd LuCI
+git clone https://github.com/tungnt017/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
+
 # 删除原smartdns核心
 #rm -rf package/feeds/packages/smartdns
 
@@ -38,18 +51,11 @@ rm -rf feeds/lienol/luci-app-softethervpn
 # 拉取修改后的luci-app-softethervpn插件
 svn co https://github.com/lxhao61/openwrt-package/trunk/luci-app-softethervpn feeds/lienol/luci-app-softethervpn
 
-# 删除自带xray-core核心
-rm -rf package/feeds/packages/xray-core
+# 删除原版zerotier插件
+rm -rf feeds/packages/net/zerotier
 
-# 拉取passwall源码
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-#git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
-
-# 删除passwall中xray-core核心
-#rm -rf package/passwall/xray-core
-
-# 拉取ipsec-vpnd LuCI
-git clone https://github.com/tungnt017/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
+# 拉取zerotier插件
+svn co https://github.com/lxhao61/openwrt-packages/trunk/net/zerotier feeds/packages/net/zerotier
 
 # 拉取cpufreq LuCI
 #svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-cpufreq package/Lean/luci-app-cpufreq
