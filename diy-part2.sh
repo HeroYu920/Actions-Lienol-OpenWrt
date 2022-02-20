@@ -51,11 +51,5 @@ rm -rf feeds/lienol/luci-app-softethervpn
 # 拉取修改后的luci-app-softethervpn插件
 svn co https://github.com/lxhao61/openwrt-package/trunk/luci-app-softethervpn feeds/lienol/luci-app-softethervpn
 
-# 删除原版zerotier插件
-rm -rf feeds/packages/net/zerotier
-
-# 拉取zerotier插件
-svn co https://github.com/lxhao61/openwrt-packages/trunk/net/zerotier feeds/packages/net/zerotier
-
 # 拉取cpufreq LuCI
 #svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-cpufreq package/Lean/luci-app-cpufreq
