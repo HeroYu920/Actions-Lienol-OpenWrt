@@ -21,17 +21,8 @@ rm -rf package/feeds/packages/xray-core
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 #git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
 
-# 删除passwall中xray-core核心
-#rm -rf package/passwall/xray-core
-
 # 拉取ipsec-vpnd LuCI
 git clone https://github.com/tungnt017/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
-
-# 删除原smartdns核心
-#rm -rf package/feeds/packages/smartdns
-
-# 拉取smartdns核心
-#svn co https://github.com/coolsnowwolf/packages/trunk/net/smartdns package/feeds/packages/smartdns
 
 # 删除原版softethervpn插件
 rm -rf feeds/packages/net/softethervpn
@@ -39,17 +30,8 @@ rm -rf feeds/packages/net/softethervpn
 # 拉取lienol大softethervpn插件
 svn co https://github.com/lxhao61/openwrt-packages/trunk/net/softethervpn feeds/packages/net/softethervpn
 
-# 删除原版softethervpn5插件
-#rm -rf feeds/packages/net/softethervpn5
-
-# 拉取Lean大softethervpn5插件
-#svn co https://github.com/coolsnowwolf/packages/trunk/net/softethervpn5 feeds/packages/net/softethervpn5
-
 # 删除原版luci-app-softethervpn插件
 #rm -rf feeds/lienol/luci-app-softethervpn
 
 # 拉取修改后的luci-app-softethervpn插件
 #svn co https://github.com/lxhao61/openwrt-package/trunk/luci-app-softethervpn feeds/lienol/luci-app-softethervpn
-
-# 拉取cpufreq LuCI
-#svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-cpufreq package/Lean/luci-app-cpufreq
