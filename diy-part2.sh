@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 #sed -i 's/192.168.1.1/192.168.6.5/g' package/base-files/files/bin/config_generate
 
 # 删除自带xray-core核心
@@ -22,7 +22,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 #git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
 
 # 拉取ipsec-vpnd LuCI
-git clone https://github.com/tungnt017/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
+#git clone https://github.com/tungnt017/luci-app-ipsec-vpnd package/lean/luci-app-ipsec-vpnd
 
 # 删除原版softethervpn插件
 #rm -rf feeds/packages/net/softethervpn
